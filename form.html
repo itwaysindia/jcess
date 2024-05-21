@@ -7,16 +7,80 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="getdata.php" method="GET">
+    <form action="getdata.php" method="POST">
         <!-- Method
         GET / POST
-        -->
-Name: <input type="text" name="name"><br />
-Roll No: <input type="text" name="roll_no"><br />
-Class: <input type="text" name="class"><br />
-Contact: <input type="text" name="contact"><br />
-<input type="submit" value="Send Data">
 
+        // attributes
+
+        <input 
+        type = "" 
+                text, 
+                number, 
+                password, 
+                email,
+                url,
+                tel,
+                range,
+                date,
+                time,
+                datetime-local,
+                color,
+                radio,
+                file,
+                image,
+                hidden,
+                checkbox,
+                submit, reset, 
+        name = ""
+        value = ""
+        placeholder = ""
+        required
+        readonly
+        disabled
+        maxlength=""
+        min=""
+        max=""
+        patern=""
+
+
+        -->
+<fieldset>
+    <legend>Personal Information</legend>
+    <label for="name">Name: </label>
+    <input type="text" name="name">
+    <br />
+    <label for="father">Father Name: </label>
+    <input type="text" name="father">
+    <br />
+    <label for="mail">Email: </label>
+    <input type="email" name="mail">
+    <br />
+    <label for="web">Website: </label>
+    <input type="url" name="web">
+    <br />
+    <label for="dob">Date of Birth: </label>
+    <input type="date" name="dob">
+    <br />
+    <label for="gender">Gender: </label>
+    Male <input type="radio" name="gender" value="M">
+    Female <input type="radio" name="gender" value="F">
+    <br />
+</fieldset>
+<br />
+<fieldset>
+    <legend>Batch Detail</legend>
+    <label for="name">Batch Name</label>
+    <input type="text">
+    <br />
+    <label for="date">Batch Start From</label>
+    <input type="date">
+    <br />
+    <label for="name">Batch Time</label>
+    <input type="time">
+    <br />
+</fieldset>
+<input type="submit">
     </form>
     
 </body>

@@ -7,16 +7,141 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="getdata.php" method="GET">
+    <form action="getdata.php" method="POST">
         <!-- Method
         GET / POST
-        -->
-Name: <input type="text" name="name"><br />
-Roll No: <input type="text" name="roll_no"><br />
-Class: <input type="text" name="class"><br />
-Contact: <input type="text" name="contact"><br />
-<input type="submit" value="Send Data">
 
+        // attributes
+
+        <input 
+        type = "" 
+                text, 
+                number, 
+                password, 
+                email,
+                url,
+                tel,
+                range,
+                date,
+                time,
+                datetime-local,
+                color,
+                radio,
+                file,
+                image,
+                hidden,
+                checkbox,
+                submit, reset, 
+        name = ""
+        value = ""
+        placeholder = ""
+        required
+        readonly
+        disabled
+        maxlength=""
+        min=""
+        max=""
+        patern=""
+
+
+        -->
+<fieldset>
+    <legend>Personal Information</legend>
+    <label for="name">Name*: </label>
+    <input type="text" name="name" placeholder="Your Name Please" value="Your Name" required>
+    <br />
+    <label for="father">Father Name*: </label>
+    <input type="text" name="father" value="F" required placeholder="Enter your father's name">
+    <br />
+    <label for="mail">Email*: </label>
+    <input type="email" value="F@f.com" required name="mail">
+    <br />
+    <label for="web">Website*: </label>
+    <input type="url" name="web" value="https://google.com" disabled>
+    <br />
+    <label for="dob">Date of Birth*: </label>
+    <input type="date" name="dob" required>
+    <br />
+    <label for="contact">Contact*: </label>
+    <input type="tel" pattern="[0-9]{10}" name="contact" maxlength="10" required>
+    <br />
+    <label for="contact">Age*: </label>
+    <input type="number" name="contact" min="18" max="60" >
+    <br />
+    <label for="gender">Gender: </label>
+    Male <input type="radio" name="gender" value="M">
+    Female <input type="radio" name="gender" value="F">
+    <br />
+    <legend>Center</legend>
+    <label for="center">Center</label>
+    <input type="text" value="Sec-I" name="center" readonly >
+    <br />
+</fieldset>
+<br />
+<fieldset>
+    
+    <legend>Batch Detail</legend>
+    <label for="name">Batch Name</label>
+    <input type="text">
+    <br />
+    <label for="date">Batch Start From</label>
+    <input type="date">
+    <br />
+    <label for="name">Batch Time</label>
+    <input type="time">
+    <br />
+    <label for="name">Range</label>
+    <input type="range">
+    <br />
+    <label for="name">Color</label>
+    <input type="Color" name="color">
+    <br />
+    <label for="name">Photo</label>
+    <input type="file" name="photo" accept="image/png, image/jpeg">
+    <br />
+    <label for="name">Disclaimer</label>
+    <input type="checkbox" name="dis"> I Agree to Continue.
+    <br />
+    <label for="name">Tell me about yourself</label>
+    <br />
+    <textarea name="about" rows="8" cols="50">This is texarea.</textarea>
+    
+    <br />
+    <label for="name">Course</label>
+    <br />
+    <select name="course">
+        <option value="mdcism">MDCISM (18 Months)</option>
+        <option value="ccc">CCC (3 Months)</option>
+        <option value="php">PHP (6 Months)</option>
+        <option value="html">HTML (1 Month)</option>
+    </select>
+
+<audio controls>
+    <source src="uploads/sunset.mp3" type="audio/mpeg">
+    Your Browser does not support.
+</audio>
+
+<!-- 
+    autoplay
+    controls
+    height, width
+    loop
+    muted
+    poster
+
+ -->
+<video autoplay loop muted width="320" height="240" poster="uploads/img.jpg" controls >
+    <source src="uploads/video1.mp4" type="video/mp4">
+    <track src="uploads/sub.vtt" kind="subtitle" srclang="en" label="English">
+    Your Browser does not support.
+
+</video>
+
+
+</fieldset>
+<input type="hidden" name="uploader" value="JCESS">
+<button type="submit">Click Here</button>
+<!-- <input type="submit"> -->
     </form>
     
 </body>

@@ -1,0 +1,64 @@
+
+[data-info]{
+    background-color:lightblue;
+}
+[type="submit"]{
+    background-color: yellow;
+}
+[href^="https"]{
+    color:green;
+    font-weight:bold;
+}
+[href$=".com"]{
+    border:2px solid red;
+}
+
+[href*="bsi"]{
+    font-size:24px;
+}
+
+a:hover{
+    color:red;
+}
+li:hover{
+    color:red;
+    background-color: #ffff00;
+    font-weight: bold;
+}
+
+input:focus{
+    background-color:blue;
+}
+
+button:active{
+    background-color:green;
+}
+input:active{
+    background-color:green;
+}
+
+li:nth-child(2n){
+    background-color:#F9EBDE;
+}
+li:first-child{
+    font-weight:bold;
+}
+
+/* p::before{
+    content: "Note: ";
+    color:red;
+    background-color: yellow;
+} */
+p::after{
+    content: "... Read more";
+    color:red;
+    background-color: yellow;
+}
+p::first-letter{
+    font-size:400%;
+    color:green;
+}
+
+p::first-line{
+    font-weight:bold;
+}

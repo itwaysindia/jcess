@@ -1,3 +1,6 @@
+*{
+    margin:0px;
+}
 
 [data-info]{
     background-color:lightblue;
@@ -61,4 +64,26 @@ p::first-letter{
 
 p::first-line{
     font-weight:bold;
+}
+
+.box1{
+    width: 50%; /* auto, 100px, 50% */
+    background-color: #ffff00;
+    padding:10px 20px; /* 10 top/bottom 20: left/right*/
+}
+.box2{
+    height: 300px;
+    color: red;
+    margin:20px;
+    /*border:10px solid blue;  dashed */
+    border-top:12px solid red;
+    border-right:12px solid blue;
+    border-bottom:12px solid black;
+    border-left:12px solid green;
+    width: 50%; /* auto, 100px, 50% */
+    /*background-color: #5b5b2e;*/
+    padding:10px 20px 30px 40px; /* 10 top/bottom 20: left/right*/
+    /*border-radius: 10px 0px 10px 0px;*/
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
 }

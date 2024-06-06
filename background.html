@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        .bg-red{
+            background-color:red;
+        }
+        .bg-bk{
+            background-color:rgb(0, 0, 0);
+        }
+        .bg-bl{
+            background-color:#6a6a94;
+        }
+        .h-200{
+            height: 20px;
+        }
+        .h-20{
+            height: 200px;
+        }
+        .txt{
+            color: white;
+        }
+
+        .bg-image{
+            background-image: url('uploads/user.png');
+            height:100px;
+            width:100px;
+            background-repeat: no-repeat; /*no-repeat, reat-x, repeat-y*/
+            background-position: left center;
+            background-size:contain;
+        }
+        .box1{
+    width: 50%; /* auto, 100px, 50% */
+    height: 200px; 
+    background-color: #ffff00;
+    padding:10px 20px; /* 10 top/bottom 20: left/right*/
+}
+    </style>
+</head>
+<body>
+   <p class="bg-red h-200 txt"> Hello!</p>
+   <p class="bg-bk h-200 txt"> Hello!</p>
+   <p class="bg-bl h-20 txt bg-image"> Hello!</p>
+   <div class="box1 bg-image">
+    hello this is box 1
+   </div>
+</body>
+</html>

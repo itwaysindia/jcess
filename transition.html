@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions and Animation</title>
+    <style>
+.box{
+    width: 100px;
+    height: 100px;
+    background-color:tomato;
+    transition: all 1s ease, opacity 2s;
+}
+.box:hover{
+width: 200px;
+background-color: blue;
+opacity: 0.5;
+}
+
+.ease-linear{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition-property: background-color, width;
+    transition-duration: 1s, 2s;
+    transition-timing-function: ease-out, linear;
+}
+.ease-linear:hover{
+    width:200px;
+    background-color: blue;;
+}
+
+
+.animation{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: ani 5s ease-in-out 2s infinite normal;
+    /*
+    -animation: name duration timing-function delay iteration-count direction
+    -name: name of @keyfram animation.
+    -duration: how long the animation will take to complete one cycle.
+    -timing-function: the speed curve of the animation
+    -delay: when the animation will start
+    -iteration-count: number of the times the animation will run (ie. infinite)
+    direction: direction of the animation (eg. normal, reverse, alternate)
+    */
+}
+
+@keyframes ani{
+    from{
+        background-color: red;
+        width:100px;
+        height: 100px;
+        transform: rotate(0deg);
+    }
+    to{
+        background-color: yellow;
+        width:200px;
+        height: 200px;
+        transform: rotate(360deg);
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- transition: property duration timing-function delay -->
+    <div class="box">
+        <p>This is box.</p>
+    </div>
+
+    <div class="ease-linear">
+    <p>    This is linear box</p>
+    </div>
+
+<div class="animation">
+<p>This is Animation Box</p>
+</div>
+    
+</body>
+</html>
